@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Posicionando Caixas ao Centro</title>
+    <style>
+        #container {
+            /*Primeio passo para centralizar verticalmente uma div, é adicionar position relative no container e absolute no conteudo*/
+            background: purple url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+
+            height: 500px;
+            padding: 15px;
+        }
+
+        #conteudo {
+            background: yellow url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+
+            /*Depois de adicionar position, posso mexer em left e top, colocando 50% centraliza o canto superior esquerdo da div, não centraliza ela no meio*/
+            left: 50%;
+            top: 50%;
+
+            /*Para centralizar ao meio, tem que colocar um transform de mover com translate -50% para cima e para esquerda*/
+            transform: translate(-50%, -50%);
+
+            height: 200px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+
+</html>
