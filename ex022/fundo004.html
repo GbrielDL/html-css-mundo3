@@ -8,15 +8,26 @@
     <title>Alterando o Tamanho da imagem de fundo</title>
     <style>
         body {
+            /* shorthand background
+            ordem (color > image > position > repeat > [size] > attachment)
+
             background-color: black;
+            height: 100vh;
+            background-attachment: fixed;
             background-image: url(imagens/wallpaper002.jpg);
             background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover; */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed; /*cover antes do fixed*/
             background-size: cover;
+
+            /*o size está na regra mas ainda não foi aplicado*/
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 15px;
             margin: auto;
             border: 2px solid #0A1D3B;
@@ -28,6 +39,36 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id qui eligendi, quo assumenda vero fuga! Nam
+            blanditiis nesciunt ut repudiandae fugit fugiat sequi excepturi quaerat ipsa corrupti! Iste, excepturi
+            nobis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sint porro laboriosam. Eum
+            officiis nemo quae cum dignissimos voluptas provident pariatur fugiat quidem veniam, eos quam id quasi
+            distinctio sunt?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id qui eligendi, quo assumenda vero fuga! Nam
+            blanditiis nesciunt ut repudiandae fugit fugiat sequi excepturi quaerat ipsa corrupti! Iste, excepturi
+            nobis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sint porro laboriosam. Eum
+            officiis nemo quae cum dignissimos voluptas provident pariatur fugiat quidem veniam, eos quam id quasi
+            distinctio sunt?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id qui eligendi, quo assumenda vero fuga! Nam
+            blanditiis nesciunt ut repudiandae fugit fugiat sequi excepturi quaerat ipsa corrupti! Iste, excepturi
+            nobis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sint porro laboriosam. Eum
+            officiis nemo quae cum dignissimos voluptas provident pariatur fugiat quidem veniam, eos quam id quasi
+            distinctio sunt?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id qui eligendi, quo assumenda vero fuga! Nam
+            blanditiis nesciunt ut repudiandae fugit fugiat sequi excepturi quaerat ipsa corrupti! Iste, excepturi
+            nobis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sint porro laboriosam. Eum
+            officiis nemo quae cum dignissimos voluptas provident pariatur fugiat quidem veniam, eos quam id quasi
+            distinctio sunt?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id qui eligendi, quo assumenda vero fuga! Nam
+            blanditiis nesciunt ut repudiandae fugit fugiat sequi excepturi quaerat ipsa corrupti! Iste, excepturi
+            nobis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sint porro laboriosam. Eum
+            officiis nemo quae cum dignissimos voluptas provident pariatur fugiat quidem veniam, eos quam id quasi
+            distinctio sunt?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id qui eligendi, quo assumenda vero fuga! Nam
+            blanditiis nesciunt ut repudiandae fugit fugiat sequi excepturi quaerat ipsa corrupti! Iste, excepturi
+            nobis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sint porro laboriosam. Eum
+            officiis nemo quae cum dignissimos voluptas provident pariatur fugiat quidem veniam, eos quam id quasi
+            distinctio sunt?</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id qui eligendi, quo assumenda vero fuga! Nam
             blanditiis nesciunt ut repudiandae fugit fugiat sequi excepturi quaerat ipsa corrupti! Iste, excepturi
             nobis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sint porro laboriosam. Eum
