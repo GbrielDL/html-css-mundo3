@@ -10,6 +10,12 @@
     --font_titulo: "Archivo Black", sans-serif;
 }
 
+html,
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +36,7 @@ header h1 {
     font-family: var(--font_titulo);
     font-size: 2.5em;
     padding-bottom: 10px;
+    font-variant: small-caps;
 }
 
 a.externo {
@@ -37,37 +44,43 @@ a.externo {
     color: white;
 }
 
+article {
+    padding: 10vh 0 10vh 0;
+}
+
 article p {
     font-family: var(--font_padrao);
     font-style: var(--padrao_style);
     font-size: 1.5em;
-    padding: 100px 25px;
+    padding: 0px 25px;
     line-height: 45px;
 }
 
-article.verso02 {
-    background: black url(imagens/background001.jpg) left center no-repeat fixed;
+article#imagem {
     background-size: cover;
+    box-shadow: inset 5px 6px 13px 0px #00000052;
+    background-attachment: fixed;
+}
+
+article.verso02 {
+    background: black url(imagens/background001.jpg) right center no-repeat;
     color: white;
-    box-shadow: inset 30px 30px 15px #00000054;
     height: 80vh;
 }
 
-#verso-especial p {
+article#imagem > pre p {
     background-color: #0000005b;
     padding: 25px;
     max-width: 280px;
-    max-height: 370px;
+    max-height: 100vh;
 }
 
-#verso-especial {
+#imagem > pre {
     padding-top: 30px;
 }
 
 article.verso05 {
-    background: black url(imagens/background002.jpg) left center no-repeat fixed;
-    box-shadow: inset 30px 30px 15px #00000054;
-    background-size: cover;
+    background: black url(imagens/background002.jpg) right center no-repeat;
     height: 80vh;
     color: white;
 }
