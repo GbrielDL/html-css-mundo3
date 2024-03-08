@@ -46,7 +46,7 @@ article p {
 }
 
 article.verso02 {
-    background: black url(imagens/background001.jpg) left center no-repeat scroll;
+    background: black url(imagens/background001.jpg) left center no-repeat fixed;
     background-size: cover;
     color: white;
     box-shadow: inset 30px 30px 15px #00000054;
@@ -65,7 +65,7 @@ article.verso02 {
 }
 
 article.verso05 {
-    background: black url(imagens/background002.jpg) left center no-repeat scroll;
+    background: black url(imagens/background002.jpg) left center no-repeat fixed;
     box-shadow: inset 30px 30px 15px #00000054;
     background-size: cover;
     height: 80vh;
