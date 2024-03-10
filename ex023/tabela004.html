@@ -28,7 +28,8 @@
         }
 
         thead,
-        caption {
+        caption,
+        tfoot {
             background-color: #d3d3d3;
         }
 
@@ -45,6 +46,11 @@
             font-weight: bolder;
             font-size: 1.5em;
             border: 1px solid black;
+        }
+
+        tfoot td {
+            text-align: center;
+            font-weight: bolder;
         }
     </style>
 </head>
@@ -102,6 +108,12 @@
                 <td>Toy Story</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total de Filmes</th>
+                <td>18</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 
