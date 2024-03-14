@@ -6,11 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Estudos de iframe</title>
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+            outline: 2px solid black;
+            padding: 5px;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Testando o uso de um iframe</h1>
-    <p>acessando o site do curso em video para aprender a programar</p>
+    <!--Tamanho padrão do iframe 300x150-->
+    <p>acessando o site do
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500"></iframe>
+        curso em video para aprender a programar
+    </p>
+
+    <p>O site do google
+        <iframe src="https://www.google.com.br" frameborder="0" height="300" width="300"></iframe>
+        não é acessível no iframe
+    </p>
 </body>
 
 </html>
