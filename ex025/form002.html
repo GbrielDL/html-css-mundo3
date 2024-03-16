@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="form002.php" method="post" autocomplete="off">
+        <p>
+            <label for="lusuario">Usuário</label>
+            <input type="text" name="usuario" id="lusuario" required minlength="5" maxlength="15" size="12"
+                placeholder="Min 5 caractere" autocomplete="username">
+        </p>
+        <p>
+            <label for="lsenha">Senha</label>
+            <input type="password" name="senha" id="lsenha" required minlength="8" maxlength="15" size="12"
+                placeholder="Min 8 caractere" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
