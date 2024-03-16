@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Elementos Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <form action="cadastro.php" autocomplete="on">
+        <p>
+            <label for="lnome">Nome</label>
+            <input type="text" name="nome" id="lnome" required maxlength="30" placeholder="nome completo"
+                autocomplete="name">
+        </p>
+        <p>
+            <label for="lmedia">Média</label>
+            <input type="number" name="media" id="lmedia" min="0" max="10" step="0.1" placeholder="Ex: 2,5" required>
+        </p>
+        <p>
+            <label for="lmes">Período Letivo</label>
+            <input type="month" name="mes" id="lmes">
+        </p>
+        <p>
+            <label for="ldata">Data</label>
+            <input type="date" name="data" id="ldata">
+        </p>
+        <p>
+            <label for="lhora">Horário da prova</label>
+            <input type="time" name="hora" id="lhora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Tudo">
+        </p>
+    </form>
 </body>
+
 </html>
