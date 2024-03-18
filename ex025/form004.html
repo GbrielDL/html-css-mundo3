@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Telefone e Email</h1>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="lnome">Nome</label>
+                <input type="text" name="nome" id="lnome" required minlength="5" maxlength="20">
+            </p>
+            <p>
+                <label for="lemail">Email</label>
+                <input type="email" name="email" id="lemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="ltelefone">Telefone</label>
+                <input type="tel" name="telefone" id="ltelefone" autocomplete="tel" required
+                    placeholder="(00) 0 0000-0000">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Tudo">
+        </p>
+    </form>
+</body>
+
+</html>
