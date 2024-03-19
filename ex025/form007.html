@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Formulário</title>
 </head>
+
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="formulario.php" method="get" autocomplete="on"></form>
+    <form action="formulario.php" method="post" autocomplete="on">
+        <p>
+            <label for="lestados">Estados</label>
+            <select name="estados" id="lestados">
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="lprof">Profissões</label>
+            <input type="text" name="prof" id="lprof" list="op">
+            <datalist id="op">
+                <option>Coveiro</option>
+                <option>Administrador</option>
+                <option>Professor</option>
+                <option>Programador</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="lcomen">Deixe um Comentário</label> <br>
+            <textarea name="comen" id="lcomen" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
+
 </html>
