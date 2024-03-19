@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+
+    <title>Formulário Teste</title>
+</head>
+
+<body>
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Preencha</legend>
+                <p>
+                    <label for="lnome">Nome</label>
+                    <input type="text" name="nome" id="lnome" autocomplete="name" minlength="5" maxlength="20" required>
+                </p>
+                <p>
+                    <label for="lsobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="lsobrenome" autocomplete="name" required>
+                </p>
+                <p class="sexo">
+                    <input type="radio" name="sexo" id="lmas" value="M">
+                    <label for="lmas">Masculino</label>
+                    <input type="radio" name="sexo" id="lfem" value="F">
+                    <label for="lfem">Feminino</label>
+                </p>
+                <p class="checkbox">
+                    <input type="checkbox" name="casado" id="lcasado">
+                    <label for="lcasado">Casado</label>
+                    <input type="checkbox" name="divorciado" id="ldivorciado">
+                    <label for="ldivorciado">Divorciado</label>
+                    <input type="checkbox" name="pobre" id="lpobre">
+                    <label for="lpobre">Pobre</label>
+                    <input type="checkbox" name="rico" id="lrico">
+                    <label for="lrico">Rico</label>
+                </p>
+                <p class="nasci">
+                    <label for="ldata">Nascimento</label>
+                    <input type="date" name="data" id="ldata" required>
+                </p>
+                <p class="message">
+                    <label for="lmessage">Deixe uma mensagem</label>
+                    <input type="text" name="message" id="lmessage">
+                </p>
+                <p class="buttons">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
