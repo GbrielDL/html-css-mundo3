@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/tela.css" media="screen">
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
+
+    <title>Media Query</title>
+</head>
+
+<body>
+    <header>
+        <h1>Notícias</h1>
+        <menu>
+            <ul>
+                <li>Esportes</li>
+                <li>Política</li>
+                <li>Tecnologia</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <hr>
+        <article>
+            <h2>Aprendendo a criar Media Queries</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione perspiciatis, neque asperiores numquam
+                ut, temporibus cupiditate facilis facere itaque odio velit architecto optio unde ipsum? Fugiat impedit
+                aliquid odio ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident mollitia
+                nostrum ducimus, vel fuga cum, maiores necessitatibus sunt cumque, unde ipsum aliquid natus voluptatibus
+                cupiditate officiis a vitae laudantium.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti ipsum dolore rerum consequatur
+                praesentium nostrum enim porro officiis incidunt quo veniam dignissimos delectus dolores deserunt
+                itaque, vel repellendus! Voluptates, illo.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam libero, reiciendis optio quae incidunt
+                asperiores adipisci? Perspiciatis est consequuntur facere porro id cupiditate optio suscipit,
+                perferendis pariatur, nesciunt odio eius?</p>
+        </article>
+
+        <form action="#" method="get">
+            <p>
+                <label for="lnum1">Número 1: </label>
+                <input type="number" name="num1" id="lnum1" required min="0" max="100"
+                    oninput="soma.innerHTML = Number(lnum1.value) + Number(lnum2.value)" placeholder="0-100">
+            </p>
+            <p>
+                <label for="lnum2">Número 2: </label>
+                <input type="number" name="num2" id="lnum2" required min="0" max="100"
+                    oninput="soma.innerHTML = Number(lnum1.value) + Number(lnum2.value)" placeholder="0-100">
+            </p>
+            <p>
+                <label for="soma">Soma: </label>
+                <output id="soma">0</output>
+            </p>
+            <p>
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
+</body>
+
+</html>
