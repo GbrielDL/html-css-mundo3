@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário com JavaScript</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="formulario.php" method="post">
+        <p>
+            <label for="lnasci">Ano que você nasceu: </label>
+            <input type="number" name="nasci" id="lnasci" required min="1900" max="2024" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="lida">No ano de <output id="atual"></output> você tem/terá: </label>
+            <output id="lida">0</output> anos
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+<script>
+    function calcIdade() {
+        let atual_year = new Date().getFullYear()
+        lida.innerHTML = Number(atual_year) - Number(lnasci.value)
+    }
+    let ano_atual = new Date().getFullYear()
+    atual.innerHTML = ano_atual
+</script>
+
+</html>
