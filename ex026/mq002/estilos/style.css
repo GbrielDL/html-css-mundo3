@@ -1,3 +1,23 @@
 @charset "UTF-8";
 
 /*Todos os tipos*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    background: black no-repeat;
+    background-size: contain;
+}
+
+h1 {
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    padding: 10px;
+}
