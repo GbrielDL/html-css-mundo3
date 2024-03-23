@@ -84,3 +84,11 @@ main>article p {
     text-indent: 20px;
     margin-bottom: 15px;
 }
+
+/*consertando o width html em telas grandes*/
+
+@media screen and (min-width: 600px) {
+    html {
+        width: 100vw;
+    }
+}
