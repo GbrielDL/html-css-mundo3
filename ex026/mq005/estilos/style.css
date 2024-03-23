@@ -9,7 +9,7 @@
 }
 
 html {
-    width: 96vw;
+    width: 100vw;
     height: 100vh;
     scroll-behavior: smooth;
 }
@@ -83,12 +83,4 @@ main>article p {
     text-align: justify;
     text-indent: 20px;
     margin-bottom: 15px;
-}
-
-/*consertando o width html em telas grandes*/
-
-@media screen and (min-width: 600px) {
-    html {
-        width: 100vw;
-    }
 }
