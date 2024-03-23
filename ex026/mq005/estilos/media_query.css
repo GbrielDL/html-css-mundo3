@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+    header menu#itens {
+        display: block;
+    }
+
+    header span#burguer {
+        display: none;
+    }
+
+    menu ul {
+        background-color: darkgray;
+    }
+
+    menu ul>li {
+        display: inline-block;
+        border: none;
+    }
+
+    main {
+        width: 780px;
+    }
+}
